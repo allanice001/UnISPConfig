@@ -2,11 +2,10 @@
 
 #####Universal script to install ISPConfig
 
-#if [ $(id -u) != "0" ]; then
-#    echo "Error: You must be root to run this script, please use the root user to install the software."
-#    exit 1
-#fi
-# Print Header
+if [ $(id -u) != "0" ]; then
+    echo "Error: You must be root to run this script, please use the root user to install the software."
+    exit 1
+fi
 
 function check_os() {
 	case `uname` in
@@ -25,10 +24,14 @@ function check_os() {
 	esac
 }  
 
-if [ ${TEST} == 'debian' ]; then
+
+TEST="$(check_os)"
+echo ${TEST}
+
+if [ ${TEST} = 'debian' ]; then
 	echo 'Installing ISPConfig for Debian based system'
-	source install_debian.sh
-elif [${TEST} == 'centos']; then
+	source debian_install.sh
+elif [ ${TEST} = 'centos' ]; then
 	echo 'Installing ISPConfig for RHEL based system'
 	install_centos
 fi

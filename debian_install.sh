@@ -35,7 +35,9 @@ done
 # Check Distribution
 if [ $DISTRIBUTION = "none" ]; then
 	# Error Message
-	error "Your distribution is unsupported! If you are sure that your distribution is supported please install the lsb-release package as it will improve detection."
+	error "Your distribution is currently unsupported!"
+	error "This script currently caters for Debian and Ubuntu"
+	error "If you are sure that your distribution is supported please install the lsb-release package as it will improve detection."
 	# Exit If Not Supported
 	exit
 fi
