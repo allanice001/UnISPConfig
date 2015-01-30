@@ -16,7 +16,7 @@ Installation Instructions:
 1. Run this command:
 
 	```bash
-	cd /tmp; wget --no-check-certificate -O ISPConfig3.tgz https://github.com/allanice001/ISPConfig-3-Debian-Installer.git/tarball/master; tar zxvf ISPConfig3.tgz; cd *Installer*; sudo bash UnISPConfig.sh
+	cd /tmp; wget --no-check-certificate -O ISPConfig3.tgz https://github.com/allanice001/UnISPConfig.git/tarball/master; tar zxvf ISPConfig3.tgz; cd *Installer*; sudo bash UnISPConfig.sh
 	```
 
 2. Answer the onscreen prompts. The script stops so that you can see the appropriate answers.
