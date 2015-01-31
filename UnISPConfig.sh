@@ -33,5 +33,5 @@ if [ ${TEST} = 'debian' ]; then
 	source debian_install.sh
 elif [ ${TEST} = 'centos' ]; then
 	echo 'Installing ISPConfig for RHEL based system'
-	install_centos
+	source centos_install.sh
 fi

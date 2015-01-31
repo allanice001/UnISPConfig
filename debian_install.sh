@@ -1,12 +1,5 @@
 #!/bin/bash
 
-###############################################################################################
-# Complete ISPConfig setup script for Debian/Ubuntu Systems         						  #
-# Drew Clardy												                                  # 
-# http://drewclardy.com				                                                          #
-# http://github.com/dclardy64/ISPConfig-3-Debian-Install                                      #
-###############################################################################################
-
 # Check if user is root
 if [ $(id -u) != "0" ]; then
     echo "Error: You must be root to run this script, please use the root user to install the software."
